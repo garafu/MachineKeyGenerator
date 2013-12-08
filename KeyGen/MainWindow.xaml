@@ -1,0 +1,23 @@
+﻿<Window x:Class="KeyGen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="&lt;machineKey&gt; generator" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="Generate" Height="23" HorizontalAlignment="Right" Margin="0,17,12,0" Name="generateButton" VerticalAlignment="Top" Width="75" Click="generateButton_Click" />
+        <Button Content="Close" Height="23" HorizontalAlignment="Right" Margin="0,74,12,0" Name="closeButton" VerticalAlignment="Top" Width="75" Click="closeButton_Click" />
+        <Button Content="Copy" Height="23" HorizontalAlignment="Right" Margin="0,46,12,0" Name="copyButton" VerticalAlignment="Top" Width="75" Click="copyButton_Click" />
+        <GroupBox Header="Strength" Height="86" HorizontalAlignment="Left" Margin="12,12,0,0" Name="groupBox1" VerticalAlignment="Top" Width="383">
+            <Grid>
+                <Label Content="decryption" Height="28" HorizontalAlignment="Left" Margin="18,4,0,0" Name="label1" VerticalAlignment="Top" />
+                <Label Content="validation" Height="28" HorizontalAlignment="Left" Margin="24,33,0,0" Name="label2" VerticalAlignment="Top" />
+                <ComboBox Height="23" HorizontalAlignment="Left" Margin="96,6,0,0" Name="decryptList" VerticalAlignment="Top" Width="120"></ComboBox>
+                <ComboBox Height="23" HorizontalAlignment="Left" Margin="96,35,0,0" Name="validateList" VerticalAlignment="Top" Width="120"></ComboBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Result" HorizontalAlignment="Stretch" Margin="12,104,12,12" Name="groupBox2" VerticalAlignment="Stretch">
+            <Grid>
+                <TextBox HorizontalAlignment="Stretch" Name="textBox" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True" IsReadOnly="True" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
